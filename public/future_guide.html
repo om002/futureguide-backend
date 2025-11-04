@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Future Guide</title>
+  <meta name="description" content="The Future Guide — careers, roadmaps, timetables and study sources for students who have passed 12th (India)." />
+  <style>
+    /* ====== Reset & base ====== */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#0f172a;background:linear-gradient(180deg,#f8fafc,#eef2ff);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:28px auto;padding:20px}
+
+    /* ====== Header ====== */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:80px;height:80px;border-radius:12px}
+    h1.title{font-size:22px;color:#0b1220}
+    .subtitle{font-size:13px;color:#475569}
+
+    nav a{margin-left:14px;padding:8px 12px;border-radius:8px;color:#334155;background:transparent;gap:10px}
+    nav a:hover{background:#e6eef8}
+
+    /* ====== Hero ====== */
+    .hero{margin-top:18px;background:linear-gradient(180deg,rgba(99,102,241,0.06),transparent);padding:22px;border-radius:14px;display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+    .hero-left{flex:1;min-width:240px}
+
+    .pill{display:inline-block;background:#eef2ff;padding:6px 10px;border-radius:2000px;font-weight:600;color:#3730a3;margin-bottom:10px}
+    .hero h2{font-size:28px;color:#0f172a;margin-bottom:8px}
+    .lead{color:#334155;line-height:1.5}
+    .cta{margin-top:12px}
+    .btn{background:#0f172a;color:white;padding:10px 14px;border-radius:10px;display:inline-block}
+
+    /* ====== Grid ====== */
+    .nav1 a{margin-left:14px;padding-left:50px;padding-right:50px;padding-top:50px; padding-bottom:50 px;,,,,,,,,border-radius:8px;color:#334155;background:transparent;gap:20px}
+    .nav1 a:hover{background:#e6eef8}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+    .card{background:white;border-radius:12px;padding:16px;box-shadow:0 6px 20px rgba(2,6,23,0.06);transition:transform .25s,box-shadow .25s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(2,6,23,0.08)}
+    .card h3{font-size:18px;margin-bottom:8px;color:#0b1220}
+    .card p{color:#475569;font-size:14px}
+
+    /* ====== Timeline / Roadmap ====== */
+    .roadmap{margin-top:18px}
+    .timeline{position:relative;padding-left:28px}
+    .timeline:before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#93c5fd,#a78bfa);border-radius:2px}
+    .step{position:relative;margin-bottom:18px;padding:12px 14px;border-radius:10px;background:#fff}
+    .step:before{content:'';position:absolute;left:-22px;top:14px;width:14px;height:14px;border-radius:50%;background:#fff;border:4px solid #6366f1;box-shadow:0 6px 18px rgba(99,102,241,0.12)}
+    .step h4{font-size:16px;margin-bottom:6px}
+    .step p{font-size:14px;color:#475569}
+
+    /* ====== Timetable ====== */
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border-bottom:1px solid #eef2ff;text-align:left}
+    th{background:#f8fafc}
+
+    /* ====== Sources & footer ====== */
+    .sources{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .chip{background:#fff;padding:8px 10px;border-radius:999px;border:1px solid #eef2ff;font-size:13px;transition:transform .25s,box-shadow .25s}
+
+    footer{margin-top:28px;padding:18px 10px;border-radius:10px;background:linear-gradient(180deg,#fff,#f8fafc);display:flex;justify-content:space-between;align-items:center}
+
+    /* ====== Small screens ====== */
+    @media (max-width:640px){
+      h1.title{font-size:18px}
+      .hero h2{font-size:20px}
+    }
+
+    /* ====== Small animations ====== */
+    .pulse{animation:pulse 3s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+    /* Accordion */
+    .accordion{border-radius:8px;overflow:hidden}
+    .acc-btn{width:100%;text-align:left;padding:12px 14px;border:none;background:linear-gradient(90deg,#f8fafc,#fff);display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .28s ease;padding:0 14px}
+    .acc-content.open{padding:12px 14px;max-height:600px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+     
+        <div>
+          <h1 class="title">The Future Guide</h1>
+          <h1 class="subtitle">Careers, roadmaps & study plans for students in India </h1>
+        </div>
+      </div>
+      <nav>
+        <a href="#careers">Careers</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-left">
+
+        
+
+        <h2 id="hero-heading">Plan your next 3-4 years with clarity</h2>
+        <p class="lead">This guide gives clear career options, step-by-step roadmaps (including government career paths), a practical daily/weekly timetable and trusted study sources you can use right away.</p>
+        <div class="cta"><a class="btn" href="#careers">Explore careers</a></div>
+      </div>
+      <div style="min-width:260px;flex:0 0 320px">
+        <!-- simple animated card stack -->
+        <div style="display:grid;gap:10px">
+          <div class="card pulse">
+            <h3>Science+Maths</h3>
+            <p>After PCM combination, you can pursue courses in Engineering (Btech/B.E.), Architecture (B Arch), Computer Science (BCA, B.Sc. IT), Pure Sciences (B.Sc. in physics, chemistry, Maths), or allied fields like BioTechnoloogy, Pharmacy(B Pharm) and even Medical (BAMS, BHMS) if biology was also an subject .</p>
+          </div>
+<div class="card pulse">
+            <h3>Science+Biology</h3>
+            <p>You can pursue medical degrees like MBBS, BDS, BAMS, BHMS, and allied health sciences such as B.Sc. Nursing and B.V.Sc (Veterinary Science). Alternatively, explore non-medical options like B.Sc. in Biotechnology, Microbiology, Forensic Science, Food Technology, Pharmacy (B.Pharm), or Agriculture. Many other specialized fields, such as Paramedical courses and even fields like Nutrition & Dietetics or Environmental Science, are also available</p>
+</div>
+          
+<div class="card pulse">
+          
+            <h3>Commerce</h3>
+            <p>You can pursue traditional degrees like Bachelor of Commerce (B.Com), professional courses like Chartered Accountancy (CA) and Company Secretary (CS), management courses such as Bachelor of Business Administration (BBA), or specialized degrees in fields like Economics, Finance, Accounting, and Law (LLB).</p>
+</div>
+          
+        </div>
+      </div>
+    </section>
+<nav1>
+    <section id="careers"  aria-label="careers">
+<a href="engineering.html">
+      <article class="card">
+        <h3>Engineering</h3>
+
+        
+      </article>
+</a>
+</nav1>
+<nav1>
+    <a href ="medical.html">
+      <article class="card">
+        <h3>Medical & Allied Health</h3>
+
+        
+      </article>
+</a>
+</nav1>
+<a href= government.html>
+      <article class="card">
+        <h3>Government Careers (UPSC / State PSC / SSC / Banking)</h3>
+
+      </article>
+</a>
+<a href= "business.html">
+      <article class="card">
+        <h3>Business & Commerce</h3>
+       
+      </article>
+</a>
+<a href=design.html>
+      <article class="card">
+        <h3>Design & Creative</h3>
+       
+      </article>
+</a>
+<a href= "skills.html">
+      <article class="card">
+        <h3>Skilled Trades & Vocational</h3>
+       
+      </article>
+</a>
+<a href= teaching.html>
+  <article class="card">
+        <h3>Teaching</h3>
+
+    
+      </article>
+</a>
+<a href= trading.html>
+  <article class="card">
+        <h3>Trading</h3>
+
+    
+      </article>
+</a>
+<a href= law.html>
+  <article class="card">
+        <h3>Law</h3>
+
+    
+      </article>
+</a>
+
+    </section>
+
+    <!-- Roadmap section with accordion for multiple careers -->
+    <section id="roadmap" class="roadmap">
+      <h2 style="margin-bottom:10px">Complete roadmaps (step-by-step)</h2>
+
+      <div class="accordion card">
+        <button class="acc-btn" onclick="toggleAcc(event)" data-target="eng-acc">Engineering / Computer Science <span>▸</span></button>
+        <div id="eng-acc" class="acc-content">
+          <div class="timeline">
+            <div class="step">
+              <h4>Year 1 (Now — next 12 months)</h4>
+              <p>Focus on strengthening Physics, Chemistry & Maths. Target JEE Main/State CET. Daily: 2–3 hours concept study + 1 hour problem solving.</p>
+            </div>
+            <div class="step">
+              <h4>Year 2</h4>
+              <p>Join a coaching/online course if needed, increase practice tests (mock exams). Start simple coding (Python) and small projects.</p>
+            </div>
+            <div class="step">
+              <h4>After Admission</h4>
+              <p>Participate in clubs, internships, open-source. Build a portfolio of projects & start placement prep from 2nd year.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="acc-btn" onclick="toggleAcc(event)" data-target="med-acc">Medical & Allied <span>▸</span></button>
+        <div id="med-acc" class="acc-content">
+          <div class="timeline">
+            <div class="step">
+              <h4>Year 1</h4>
+              <p>Focus on NEET subjects (Biology, Physics, Chemistry). Strict revision schedule, NCERT first.</p>
+            </div>
+            <div class="step">
+              <h4>Year 2</h4>
+              <p>Full-length mocks, time management practice, focus on weaker topics. Apply for state counselling after results.</p>
+            </div>
+            <div class="step">
+              <h4>After Admission</h4>
+              <p>Clinical exposure, internships, and consider postgraduate study or government medical service exams later.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="acc-btn" onclick="toggleAcc(event)" data-target="gov-acc">Government Careers (UPSC/SSC/Banking) <span>▸</span></button>
+        <div id="gov-acc" class="acc-content">
+          <div class="timeline">
+            <div class="step">
+              <h4>Immediate (12th passed)</h4>
+              <p>If you plan for SSC or Banking (PO/Clerk), start basics of English, Quant, Reasoning. Many posts accept 12th/graduate — check exam eligibility.</p>
+            </div>
+            <div class="step">
+              <h4>Medium term (after graduation)</h4>
+              <p>For UPSC: most aspirants start serious preparation after graduation. Build reading habit, current affairs, and optional subject foundations.</p>
+            </div>
+            <div class="step">
+              <h4>Long term</h4>
+              <p>Gain work experience, choose specialized government exams (railways, state PSCs, defense) as suitable. Consider coaching & mentorship.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="timetable" style="margin-top:18px">
+      <h2>Best practical timetable </h2>
+      <p class="lead">Below is a balanced study plan for a 12th-pass student preparing for entrance exams and board-level foundation. Adjust timings to fit your energy levels.</p>
+
+      <div class="card" style="margin-top:12px">
+        <table aria-label="Sample weekly timetable">
+          <thead>
+            <tr><th>Time</th><th>Mon–Fri</th><th>Sat</th><th>Sun</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>6:00–7:00</td><td>Revision & quick notes</td><td>Mock test (1 hour)</td><td>Light revision & hobby</td></tr>
+            <tr><td>7:30–9:30</td><td>Concepts (2 hours)</td><td>Coaching / doubt clearing</td><td>Project / portfolio</td></tr>
+            <tr><td>10:00–12:00</td><td>Practice problems</td><td>Extra practice</td><td>Rest / family time</td></tr>
+            <tr><td>2:00–4:00</td><td>DPP or self-study</td><td>Group study</td><td>Revision</td></tr>
+            <tr><td>6:00–8:00</td><td>Mock tests / past papers</td><td>Coaching test</td><td>Plan next week</td></tr>
+            <tr><td>8:30–9:30</td><td>Light reading / current affairs</td><td>Reading</td><td>Relax</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:10px;color:#475569">Tip:  Keep one day lighter to avoid burnout.</p>
+      </div>
+    </section>
+
+    <section id="sources" style="margin-top:18px">
+      <h2>Trusted sources & study material </h2>
+      <div class="sources">
+        <a href= "https://www.nta.ac.in/">
+        <span class="chip">NTA & official exam pages</span></a>
+       <a href="https://www.iitd.ac.in/">
+        <span class="chip"> IIT D.</span></a>
+  <a href="https://www.aiimsexams.ac.in/">
+        <span class="chip"> AIIMS</span></a>
+   <a href= "https://nptel.ac.in/">
+        <span class="chip"> NPTEL</span></a>
+        <span class="chip">Books: R.D. Sharma / H.C. Verma / O.P. Tandon (as per subject)</span>
+      </div>
+      <p style="margin-top:10px;color:#475569">Note: For government exams, always check official notification pages (exam pattern, eligibility, dates) before applying.</p>
+    </section>
+
+  
+  </div>
+
+  <script>
+    // Accordion toggle logic
+    function toggleAcc(e){
+      var btn = e.currentTarget;
+      var id = btn.getAttribute('data-target');
+      var content = document.getElementById(id);
+      var all = document.querySelectorAll('.acc-content');
+      // close others (optional) — comment out to allow multiple open
+      all.forEach(c=>{ if(c!==content) c.classList.remove('open'); });
+      content.classList.toggle('open');
+      // rotate arrow
+      var span = btn.querySelector('span');
+      if(content.classList.contains('open')) span.textContent='▾'; else span.textContent='▸';
+    }
+
+    // Small keyboard accessibility: toggle using Enter on focused acc-btn
+    document.querySelectorAll('.acc-btn').forEach(b=>b.addEventListener('keydown', function(ev){ if(ev.key==='Enter') toggleAcc({currentTarget:this}); }));
+  </script>
+</body>
+</html>
