@@ -28,7 +28,18 @@ const db = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0
 });
-        
+      // ✅ Test database connection route
+app.get("/test-db", (req, res) => {
+  db.query("SELECT 1 + 1 AS result", (err, results) => {
+    if (err) {
+      console.error("❌ Database test failed:", err);
+      return res.status(500).send("DB connection failed!");
+    }
+    console.log("✅ Database connected successfully!");
+    res.send("✅ Database connected successfully!");
+  });
+});
+  
 
 
 db.connect((err) => {
@@ -154,14 +165,6 @@ function sendBulkEmails(recipients) {
 }
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
+  console.log(`✅ Server running on port 3000`);
 });
-app.get("/test-db", (req, res) => {
-  db.query("SELECT 1 + 1 AS result", (err, results) => {
-    if (err) {
-      console.error("❌ Database test failed:", err);
-      return res.status(500).send("DB connection failed");
-    }
-    res.send("✅ Database connected successfully!");
-  });
-});
+
